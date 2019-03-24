@@ -3,7 +3,7 @@ package org.lasencinas;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
-import org.foobarspam.arnoldEnumType.logica.Planeta;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -31,14 +31,14 @@ public class MainTest {
         Planeta planeta = Planeta.MERCURY;
         assertThat(planeta).isInstanceOf(Planeta.class);
         assertThat(planeta.ordinal()).isEqualTo(0);
-        assertThat(planeta.name()).isEqualToIgnoringWhitespace("MERCURY");
+        assertThat(planeta.name()).isEqualTo("MERCURY");
         assertThat(Planeta.valueOf(planeta.name())).isEqualTo(Planeta.MERCURY);
         assertThat(planeta.compareTo(planeta.MERCURY)).isEqualTo(0);
-        assertThat(planeta.toString()).isEqualToIgnoringWhitespace("MERCURY");
+        assertThat(planeta.toString()).isEqualTo("MERCURY");
         assertThat(planeta.equals(planeta.MERCURY)).isEqualTo(true);
         assertThat(Planeta.values()[0]).isEqualTo(planeta);
     }
-
+/*
     @Test
     public void PlanetaGetMasaTest(){
         Planeta planeta = Planeta.MERCURY;
@@ -99,7 +99,7 @@ public class MainTest {
         for(Planeta planeta : Planeta.getGigantesGaseosos()){
             assertThat(planeta.name()).isIn(gigantesGaseosos);
         }
-    }
+    }*/
 
 
 }
