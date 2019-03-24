@@ -38,7 +38,7 @@ public class MainTest {
         assertThat(planeta.equals(planeta.MERCURY)).isEqualTo(true);
         assertThat(Planeta.values()[0]).isEqualTo(planeta);
     }
-/*
+
     @Test
     public void PlanetaGetMasaTest(){
         Planeta planeta = Planeta.MERCURY;
@@ -57,7 +57,7 @@ public class MainTest {
             assertThat(planeta.name()).isIn(planetas);
         }
     }
-
+/*
     @Test
     public void PesoSuperficieMercurioTest(){
         Planeta planeta = Planeta.MERCURY;
