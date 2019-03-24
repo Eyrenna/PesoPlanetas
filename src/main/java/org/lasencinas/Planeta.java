@@ -13,6 +13,7 @@ public enum Planeta {
     //Atributos
     private Double masa = 0d;
     private Double radio = 0d;
+    private Double GRAVEDAD = 6.67300E-11;
 
     //Constructor
     Planeta(double masa, double radio) {
@@ -38,5 +39,21 @@ public enum Planeta {
 
     public Double getRadio() {
         return radio;
+    }
+
+    public Double getGRAVEDAD() {
+        return GRAVEDAD;
+    }
+
+    public double GEnSuperficie(Planeta planeta) {
+        return getGRAVEDAD() * planeta.getMasa() / Math.pow(planeta.getRadio(), 2);
+    }
+
+    public double masaHumano(double pesoHumano) {
+        return pesoHumano / GEnSuperficie(EARTH);
+    }
+
+    public double pesoSuperficie(double pesoHumano) {
+        return masaHumano(pesoHumano) * GEnSuperficie(this);
     }
 }
