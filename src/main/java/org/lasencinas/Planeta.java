@@ -23,6 +23,7 @@ public enum Planeta {
         this.radio = radio;
     }
 
+
     //Métodos
 
     //Seters
@@ -61,5 +62,9 @@ public enum Planeta {
 
     public static EnumSet<Planeta> getPlanetasTerrestres() {
         return EnumSet.range(Planeta.MERCURY, Planeta.MARS);
+    }
+
+    public static EnumSet<Planeta> getGigantesGaseosos() {
+        return EnumSet.complementOf(getPlanetasTerrestres());
     }
 }

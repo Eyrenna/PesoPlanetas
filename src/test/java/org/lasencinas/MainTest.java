@@ -81,7 +81,7 @@ public class MainTest {
             assertThat(planeta.name()).isIn(planetasTerrestres);
         }
     }
-/*
+
     @Test
     public void ArrayGigantesGaseosos(){
 
@@ -99,7 +99,7 @@ public class MainTest {
         for(Planeta planeta : Planeta.getGigantesGaseosos()){
             assertThat(planeta.name()).isIn(gigantesGaseosos);
         }
-    }*/
+    }
 
 
 }
