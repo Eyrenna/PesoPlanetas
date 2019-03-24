@@ -64,7 +64,7 @@ public class MainTest {
         double pesoHumano = 175;
         assertEquals(66.107583, planeta.MERCURY.pesoSuperficie(pesoHumano) , 0.001);
     }
-/*
+
     @Test
     public void ArrayPlanetasTerrestresTest(){
 
@@ -81,7 +81,7 @@ public class MainTest {
             assertThat(planeta.name()).isIn(planetasTerrestres);
         }
     }
-
+/*
     @Test
     public void ArrayGigantesGaseosos(){
 
